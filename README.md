@@ -40,16 +40,28 @@ This is a screen capture of the server console. The server received connections 
 
 ![first client](img/2-1-4.png)
 
-This is a screen capture of the first client. The first client received a message from the server when they first made connection and then received messages brodcasted by the second and the third clients. Upon sending the message "hai semua", the first client also received the message sent by itself.
+This is a screen capture of the first client console. The first client received a message from the server when they first made connection and then received messages brodcasted by the second and the third clients. Upon sending the message "hai semua", the first client also received the message sent by itself.
 
 ### Second client
 
 ![second client](img/2-1-3.png)
 
-This is a screen capture of the second client. The second client also received a message from the server when they first made connection and then received a message brodcasted by the third client that is sent first. Upon sending the message "hello", the second client also received the message sent by itself. Lastly, it received the message sent by the first client which is sent last.
+This is a screen capture of the second client console. The second client also received a message from the server when they first made connection and then received a message brodcasted by the third client that is sent first. Upon sending the message "hello", the second client also received the message sent by itself. Lastly, it received the message sent by the first client which is sent last.
 
 ### Third client
 
 ![third client](img/2-1-2.png)
 
-This is a screen capture of the third client. The third client also received a message from the server. Upon sending the message "hai", the third client also received the message sent by itself. Then, it received messages sent by the first and third clients.
+This is a screen capture of the third client console. The third client also received a message from the server. Upon sending the message "hai", the third client also received the message sent by itself. Then, it received messages sent by the first and third clients.
+
+<br>
+
+## 2.2 Modifying the websocket port
+
+The application still runs properly when the port in both the server and client program is modified to port 8080. It is still using websocket protocol as a websocket server can be ran on any port that the host OS allows. 
+
+## 2.3 Small changes. Add some information to client
+
+![add info](img/2-3.png)
+
+This is a screen capture of the client console after the server program is modified to send some information to the client. Upon sending its message, the client received the message back as it is brodcasted to every client. The message included the sender's IP and port, so that all clients that received the brodcast know who sent the message.
