@@ -1,2 +1,15 @@
 timer_future/target
+
 chat-async/target
+
+SimpleWebsocketServer/node_modules
+SimpleWebsocketServer/dist
+
+YewChat/node_modules
+YewChat/dist
+YewChat/target
+YewChat/pkg
+YewChat/wasm-pack.log
+
+.DS_Store
+.vscode

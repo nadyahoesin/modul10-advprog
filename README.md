@@ -60,8 +60,18 @@ This is a screen capture of the third client console. The third client also rece
 
 The application still runs properly when the port in both the server and client program is modified to port 8080. It is still using websocket protocol as a websocket server can be ran on any port that the host OS allows. 
 
+<br>
+
 ## 2.3 Small changes. Add some information to client
 
-![add info](img/2-3.png)
+![some info](img/2-3.png)
 
 This is a screen capture of the client console after the server program is modified to send some information to the client. Upon sending its message, the client received the message back as it is brodcasted to every client. The message included the sender's IP and port, so that all clients that received the brodcast know who sent the message.
+
+# Tutorial 3: WebChat using yew
+
+## 3.1 Original code
+
+![webchat 1](img/3-1-1.png)
+![webchat 2](img/3-1-2.png)
+![webchat 3](img/3-1-3.png)
