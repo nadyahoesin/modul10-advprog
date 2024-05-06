@@ -1,4 +1,4 @@
-# Times
+# Timer
 
 ## 1.2 Understanding how it works
 
