@@ -1,4 +1,4 @@
-# Timer
+# Tutorial 1: Timer
 
 ## 1.2 Understanding how it works
 
@@ -20,3 +20,36 @@ This screen capture is when there were multiple spawns. All the lines printing '
 ![removing drop](img/1-3-1.png)
 
 This screen capture is when the drop is removed. The while block inside the `run` method of the `Executor` keep on looping, resulting in the program not stopping. This is because the executor didn't know that there were no more tasks.
+
+<br>
+
+# Tutorial 2: Broadcast Chat
+
+## 2.1 Original code of broadcast chat
+
+To run the server, use the command `cargo run --bin server` and to run the client, use the command `cargo run --bin client`.
+
+
+### Server
+
+![server](img/2-1-1.png)
+
+This is a screen capture of the server console. The server received connections and chats from the clients.
+
+### First client
+
+![first client](img/2-1-4.png)
+
+This is a screen capture of the first client. The first client received a message from the server when they first made connection and then received messages brodcasted by the second and the third clients. Upon sending the message "hai semua", the first client also received the message sent by itself.
+
+### Second client
+
+![second client](img/2-1-3.png)
+
+This is a screen capture of the second client. The second client also received a message from the server when they first made connection and then received a message brodcasted by the third client that is sent first. Upon sending the message "hello", the second client also received the message sent by itself. Lastly, it received the message sent by the first client which is sent last.
+
+### Third client
+
+![third client](img/2-1-2.png)
+
+This is a screen capture of the third client. The third client also received a message from the server. Upon sending the message "hai", the third client also received the message sent by itself. Then, it received messages sent by the first and third clients.
